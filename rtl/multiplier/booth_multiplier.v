@@ -2,6 +2,8 @@
 // Uses Booth's algorithm to reduce the number of additions
 // More efficient for signed multiplication
 // Handles both positive and negative numbers
+// Note: Uses for-loop in always block. Ensure your synthesis tool supports this construct.
+//       For maximum compatibility, consider using a generate block or state machine implementation.
 
 module booth_multiplier #(
     parameter WIDTH = 8

@@ -1,6 +1,8 @@
 // Floating Point Adder (IEEE 754 Single Precision)
 // Adds two 32-bit floating point numbers
 // Format: Sign (1 bit) | Exponent (8 bits) | Mantissa (23 bits)
+// Note: Normalization logic handles common cases but may not cover all edge cases.
+//       For production use, consider implementing a full priority encoder for leading zero detection.
 
 module fp_adder (
     input  [31:0] a,           // First operand (IEEE 754)

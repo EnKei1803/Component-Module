@@ -1,6 +1,7 @@
 // Carry Select Adder
 // Uses multiple adders and a multiplexer to improve speed
 // Computes sum for both cin=0 and cin=1, then selects based on actual carry
+// Dependencies: full_adder (from ripple_carry_adder.v)
 
 module carry_select_adder #(
     parameter WIDTH = 8,

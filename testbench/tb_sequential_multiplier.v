@@ -64,7 +64,7 @@ module tb_sequential_multiplier;
         #(CLK_PERIOD);
         start = 0;
         wait(done);
-        $display("%0t\t %d\t %d\t %d\t %b", $time, a, b, product, done);
+        $display("%0t\t %d\t %d\t %d\t\t %b", $time, a, b, product, done);
         #(CLK_PERIOD*2);
         
         // Test case 4: Multiply by zero

@@ -2,6 +2,7 @@
 // Uses an array of AND gates and adders
 // Generates partial products and sums them
 // Good for understanding but not optimal for area/speed
+// Dependencies: ripple_carry_adder (from ripple_carry_adder.v)
 
 module array_multiplier #(
     parameter WIDTH = 8

@@ -1,6 +1,7 @@
 // Subtractor Module
 // Performs A - B using 2's complement addition (A + (~B) + 1)
 // Supports both signed and unsigned subtraction
+// Dependencies: ripple_carry_adder (from ripple_carry_adder.v)
 
 module subtractor #(
     parameter WIDTH = 8

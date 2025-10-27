@@ -1,6 +1,7 @@
 // Adder-Subtractor Module
 // Combined module that can perform both addition and subtraction
 // Control signal determines the operation
+// Dependencies: carry_lookahead_adder (from carry_lookahead_adder.v)
 
 module adder_subtractor #(
     parameter WIDTH = 8
