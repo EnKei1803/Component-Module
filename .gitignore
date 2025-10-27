@@ -1,0 +1,89 @@
+# Verilog/SystemVerilog simulation files
+*.vcd
+*.wlf
+*.log
+*.pb
+*.jou
+*.str
+*.his
+*.xmsgs
+*.drc
+*.wdb
+*.vvp
+
+# Compilation files
+work/
+*.o
+*.so
+*.a
+*.lib
+
+# Simulator generated files
+transcript
+vsim.wlf
+modelsim.ini
+*.vstf
+*.wlft
+
+# Vivado/Xilinx files
+*.jou
+*.log
+*.rpt
+*.xml
+*.dcp
+*.bit
+*.bin
+*.xsa
+*.runs/
+*.sim/
+*.cache/
+*.hw/
+*.ip_user_files/
+*.gen/
+.Xil/
+
+# Quartus/Intel files
+*.qws
+*.sof
+*.pof
+*.jdi
+*.rpt
+db/
+incremental_db/
+simulation/
+output_files/
+
+# Synopsys files
+*.syn
+*.mr
+*.pvl
+default.svf
+*.log
+
+# Cadence files
+*.history
+cds.lib
+hdl.var
+*.shm/
+
+# OS files
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+*~
+
+# IDE files
+.vscode/
+.idea/
+*.sublime-*
+
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+
+# Temporary files
+*.tmp
+*.bak
+tmp/
