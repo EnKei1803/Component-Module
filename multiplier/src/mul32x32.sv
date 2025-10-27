@@ -118,6 +118,7 @@ module ADDER_64bits
     output logic [63:0] Sum,
     output logic        Cout
 );
-    assign {cout, sum} = a + b + cin;
+	assign {Cout, Sum} = A + B + Cin;
+
 
 endmodule 
