@@ -7,7 +7,7 @@ module tb_fpa_32bits;
 
   // ---------------- DUT ----------------
   logic [31:0] a, b, y;
-  fpa dut (.operand_a(a), .operand_b(b), .result(y));
+  fpa_32bits	dut (.operand_a(a), .operand_b(b), .result(y));
 
   // -------------- Constants --------------
   localparam logic [31:0] QNAN    = 32'h7FC0_0000;
