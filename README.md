@@ -18,7 +18,7 @@ Status: Active Development (WIP)
 ## Repository Structure
 
 
-Component-Module
+Component-Module  
  ├─ adder/               # Integer adders (Ripple, CLA, Kogge-Stone, etc.)  
  ├─ comparator/          # Word comparators (==, !=, <, >, <=, >=)  
  ├─ floating point/      # FP primitives and adder components  
@@ -32,9 +32,8 @@ Component-Module
 ## Getting Started
 
 ### 1. Clone the repository
-git clone https://github.com/EnKei1803/Component-Module.git
-
-cd Component-Module
+git clone https://github.com/EnKei1803/Component-Module.git  
+cd Component-Module  
 
 ### 2. Simulate with Verilator
 verilator -Wall --cc adder/adder.sv --exe tb/tb_adder.cpp  
