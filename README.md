@@ -52,28 +52,28 @@ Tip: Create a simple "tb" directory with self-checking testbenches for each modu
 Purpose: High-speed or area-efficient integer addition.  
 Variants: Ripple-carry, Carry-lookahead, Kogge-Stone, etc.  
 Parameters: WIDTH (default 32)  
-Signals: a, b, cin, sum, cout, ovf  
+Signals: a, b, cin, sum, cout    
 
 ### Comparator (comparator/)
 Purpose: Signed and unsigned comparison logic.  
-Parameters: WIDTH  
-Outputs: eq, lt, gt, le, ge  
+Parameters: 32  
+Outputs: eq, lt, gt  
 
 ### Multiplier (multiplier/)
 Purpose: Integer multiplication.  
-Variants: Iterative, Booth, Wallace Tree  
-Parameters: WIDTH, SIGNED  
+Variants: Wallace Tree  
+Parameters: 32  
 Outputs: Product (2*WIDTH) or truncated  
 
 ### Universal Shifter (universial shifter/)
 Purpose: Logical/Arithmetic shift and rotation.  
-Parameters: WIDTH  
+Parameters: 32  
 Signals: data_in, shamt, mode, data_out  
 
 ### Floating Point (floating point/)
 Purpose: IEEE-754 compatible floating-point adder and helpers (align, normalize, denormalize).  
 Parameters: EXP, FRAC (e.g., 8/23 for FP32)  
-Features: Handles NaN, INF, Zero, and RNE rounding.
+Features: Handles NaN, INF, Zero, and RNE rounding.  
 
 ---
 
