@@ -1,4 +1,4 @@
-# Component-Module
+# ⚙️ Component-Module
 
 Essential, reusable RTL building blocks written in SystemVerilog for arithmetic and datapath design: adders, comparators, multipliers, floating-point components, and universal shifters.
 
@@ -7,7 +7,7 @@ Status: Active Development (WIP)
 
 ---
 
-## Why this repository exists
+## 🧩 Why this repository exists
 
 - Centralized collection of reusable arithmetic and datapath modules.
 - Simple, parameterized designs for easy integration into larger SoC or FPGA projects.
@@ -15,7 +15,7 @@ Status: Active Development (WIP)
 
 ---
 
-## Repository Structure
+## 📂 Repository Structure
 
 Component-Module/  
 ├─ adder/               # Integer adders  
@@ -27,7 +27,7 @@ Component-Module/
 
 ---
 
-## Getting Started
+## 🚀 Getting Started
 
 ### 1. Clone the repository
 git clone https://github.com/EnKei1803/Component-Module.git  
@@ -46,7 +46,7 @@ Tip: Create a simple "tb" directory with self-checking testbenches for each modu
 
 ---
 
-## Module Overview
+## 💡 Module Overview
 
 ### Adder (adder/)
 Purpose: High-speed or area-efficient integer addition.  
@@ -77,7 +77,7 @@ Features: Handles NaN, INF, Zero, and RNE rounding.
 
 ---
 
-## Verification Guidelines
+## 📚 Verification Guidelines
 
 - Use self-checking testbenches with assertions.
 - Include directed and randomized tests.
@@ -88,7 +88,7 @@ Features: Handles NaN, INF, Zero, and RNE rounding.
 
 ---
 
-## Synthesis Notes
+## 📄 Synthesis Notes
 
 - Use always_ff and always_comb properly.
 - Parametrize widths instead of hardcoding.
@@ -97,7 +97,7 @@ Features: Handles NaN, INF, Zero, and RNE rounding.
 
 ---
 
-## Roadmap
+## 🏆 Roadmap
 
 - [ ] Add complete testbenches for each module.
 - [ ] Document all ports and parameters in detail.
@@ -107,7 +107,7 @@ Features: Handles NaN, INF, Zero, and RNE rounding.
 
 ---
 
-## Contributing
+## 🌐 Contributing
 
 1. Fork and create a feature branch (feat/<module> or fix/<module>).
 2. Add/extend testbenches with pass/fail criteria.
@@ -116,7 +116,7 @@ Features: Handles NaN, INF, Zero, and RNE rounding.
 
 ---
 
-## License
+## 🪪 License
 
 No license file yet. Consider adding MIT or BSD-3-Clause for open-source usage.
 
