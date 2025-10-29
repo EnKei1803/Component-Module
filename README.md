@@ -1,36 +1,54 @@
 # Component-Module
 
+
 Essential, reusable RTL building blocks written in SystemVerilog for arithmetic and datapath design: adders, comparators, multipliers, floating-point components, and universal shifters.
+
 
 Language: SystemVerilog  
 Status: Active Development (WIP)
 
+
 ---
 
+
 ## Why this repository exists
+
 
 - Centralized collection of reusable arithmetic and datapath modules.
 - Simple, parameterized designs for easy integration into larger SoC or FPGA projects.
 - Compatible with both open-source (Verilator, OSS-CAD-Suite) and commercial EDA tools.
 
+
 ---
+
 
 ## Repository Structure
 
+
 Component-Module
+
 ├─ adder/               # Integer adders (Ripple, CLA, Kogge-Stone, etc.)
+
 ├─ comparator/          # Word comparators (==, !=, <, >, <=, >=)
+
 ├─ floating point/      # FP primitives and adder components
+
 ├─ multiplier/          # Integer multipliers (Iterative, Wallace tree, Booth, etc.)
+
 ├─ universial shifter/  # Logical, arithmetic, rotate shifters
+
 └─ README.md
+
 
 ---
 
+
 ## Getting Started
+
 
 ### 1. Clone the repository
 git clone https://github.com/EnKei1803/Component-Module.git
+
 cd Component-Module
 
 ### 2. Simulate with Verilator
