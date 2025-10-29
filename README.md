@@ -26,14 +26,14 @@ Status: Active Development (WIP)
 
 
 Component-Module
-
+```
  ├─ adder/               # Integer adders (Ripple, CLA, Kogge-Stone, etc.)
  ├─ comparator/          # Word comparators (==, !=, <, >, <=, >=)
  ├─ floating point/      # FP primitives and adder components
  ├─ multiplier/          # Integer multipliers (Iterative, Wallace tree, Booth, etc.)
  ├─ universial shifter/  # Logical, arithmetic, rotate shifters
  └─ README.md
-
+```
 
 ---
 
