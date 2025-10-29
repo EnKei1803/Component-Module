@@ -17,7 +17,7 @@ Status: Active Development (WIP)
 
 ## Repository Structure
 
-Component-Module/
+Component-Module
 ├─ adder/               # Integer adders (Ripple, CLA, Kogge-Stone, etc.)
 ├─ comparator/          # Word comparators (==, !=, <, >, <=, >=)
 ├─ floating point/      # FP primitives and adder components
