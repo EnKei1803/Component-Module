@@ -27,7 +27,7 @@ module comparator_1bit
 
 assign o_eq = ~(operand_a ^ operand_b);
 assign o_lt = ~ operand_a & operand_b;
-assign o_gt = ~(o_eq | o_lt);
+assign o_gt = ~(o_eq & o_lt);
 
 endmodule 
 
@@ -52,7 +52,7 @@ comparator_1bit	com4bit_low		(.operand_a(operand_a[0]), .operand_b(operand_b[0])
 
 assign o_eq =  Ehigh & Elow;
 assign o_lt = (Ehigh & Llow) | Lhigh;
-assign o_gt = ~(o_eq | o_lt);
+assign o_gt = ~(o_eq & o_lt);
 
 endmodule
 
@@ -77,7 +77,7 @@ comparator_2bit	com2bit_low		(.operand_a(operand_a[1:0]), .operand_b(operand_b[1
 
 assign o_eq =  Ehigh & Elow;
 assign o_lt = (Ehigh & Llow) | Lhigh;
-assign o_gt = ~(o_eq | o_lt);
+assign o_gt = ~(o_eq & o_lt);
 
 endmodule
 
@@ -102,7 +102,7 @@ comparator_4bit	com4bit_low		(.operand_a(operand_a[3:0]), .operand_b(operand_b[3
 
 assign o_eq =  Ehigh & Elow;
 assign o_lt = (Ehigh & Llow) | Lhigh;
-assign o_gt = ~(o_eq | o_lt);
+assign o_gt = ~(o_eq & o_lt);
 
 endmodule
 
@@ -127,7 +127,7 @@ comparator_8bit	com8bit_low		(.operand_a(operand_a[ 7:0]), .operand_b(operand_b[
 
 assign o_eq =  Ehigh & Elow;
 assign o_lt = (Ehigh & Llow) | Lhigh;
-assign o_gt = ~(o_eq | o_lt);
+assign o_gt = ~(o_eq & o_lt);
 
 endmodule 
 
@@ -152,6 +152,7 @@ comparator_16bit	com16bit_low	(.operand_a(operand_a[15: 0]), .operand_b(operand_
 
 assign o_eq =  Ehigh & Elow;
 assign o_lt = (Ehigh & Llow) | Lhigh;
-assign o_gt = ~(o_eq | o_lt);
+assign o_gt = ~(o_eq & o_lt);
+
 
 endmodule 
