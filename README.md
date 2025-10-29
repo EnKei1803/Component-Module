@@ -53,11 +53,14 @@ cd Component-Module
 
 ### 2. Simulate with Verilator
 verilator -Wall --cc adder/adder.sv --exe tb/tb_adder.cpp
+
 make -C obj_dir -f Vadder.mk Vadder
+
 ./obj_dir/Vadder
 
 ### 3. Simulate with Icarus Verilog
 iverilog -g2012 -o sim.out adder/adder.sv tb/tb_adder.sv
+
 vvp sim.out
 
 Tip: Create a simple "tb" directory with self-checking testbenches for each module.
