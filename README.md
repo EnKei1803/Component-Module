@@ -18,13 +18,16 @@ Status: Active Development (WIP)
 ## Repository Structure
 
 
-Component-Module  
- ├─ adder/               # Integer adders (Ripple, CLA, Kogge-Stone, etc.)  
- ├─ comparator/          # Word comparators (==, !=, <, >, <=, >=)  
- ├─ floating point/      # FP primitives and adder components  
- ├─ multiplier/          # Integer multipliers (Iterative, Wallace tree, Booth, etc.)  
- ├─ universial shifter/  # Logical, arithmetic, rotate shifters  
- └─ README.md
+<pre>
+Component-Module/
+├─ adder/               # Integer adders
+├─ comparator/          # Word comparators
+├─ floating point/      # FP primitives
+├─ multiplier/          # Integer multipliers
+├─ universial shifter/  # Logical, arithmetic, rotate shifters
+└─ README.md
+</pre>
+
 
 
 ---
