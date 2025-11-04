@@ -242,6 +242,8 @@ module special_detect
 			special_result = {1'b0, 8'h00, 23'b0};	
 		end
 	end
+
+	
 	
 	// ===========================================
 	// 				Select Result
@@ -505,7 +507,7 @@ module frac_calculation
 	assign comp1_sel = ~frac_gt & sign_dif;
 	assign comp2_sel =  frac_gt & sign_dif;
 	
-	comparator_32bit		frac_compare
+	comparator		frac_compare
 	(
 	  .operand_a	({8'b0, frac_1}), 
 	  .operand_b	(frac_2_align[63:32]),
@@ -532,16 +534,18 @@ module frac_calculation
 		
 		.o_comp	(comp2)
 	);
-			
+	
+	
+	
 	
 	adder_64bits		frac_calculate
 	(
-		 .operand_a		({8'b0,comp1}), 
-		 .operand_b		({8'b0,comp2}),
-		 .cin				(sign_dif),
+		 .A			({8'b0,comp1}), 
+		 .B			({8'b0,comp2}),
+		 .Cin			(sign_dif),
 		 
-		 .sum				(frac_new),
-		 .cout			()
+		 .Sum			(frac_new),
+		 .Cout		()
 	);
 	
 	assign overflow = ~sign_dif & frac_new[56];
@@ -1257,63 +1261,3 @@ module frac_mux
     end	
 				
 endmodule 
-
-
-
-// ===================================================
-// 			Dummy Adder (change to your design)
-// ===================================================
-
-module adder_8bits 
-(
-    input logic [7:0] operand_a,
-    input logic [7:0] operand_b,
-    input logic        cin,
-
-    output logic [7:0] sum,
-    output logic        cout
-);
-    assign {cout, sum} = operand_a + operand_b + cin;
-
-endmodule
-
-module adder_16bits 
-(
-    input logic [15:0] operand_a,
-    input logic [15:0] operand_b,
-    input logic        cin,
-
-    output logic [15:0] sum,
-    output logic        cout
-);
-    assign {cout, sum} = operand_a + operand_b + cin;
-
-endmodule
-
-module adder_32bits 
-(
-    input logic [31:0] operand_a,
-    input logic [31:0] operand_b,
-    input logic        cin,
-
-    output logic [31:0] sum,
-    output logic        cout
-);
-    assign {cout, sum} = operand_a + operand_b + cin;
-
-endmodule
-
-module adder_64bits 
-(
-    input logic [63:0] operand_a,
-    input logic [63:0] operand_b,
-    input logic        cin,
-
-    output logic [63:0] sum,
-    output logic        cout
-);
-    assign {cout, sum} = operand_a + operand_b + cin;
-
-endmodule
-
-
